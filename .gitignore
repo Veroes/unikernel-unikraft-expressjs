@@ -1,0 +1,17 @@
+# Unikraft Config
+/Makefile.uk
+/.unikraft/
+/.config*
+
+# Node Config
+/node_modules
+npm-debug.log
+.env
+.DS_Store
+
+# Results
+/benchmark*.log
+/benchmark_results*.csv
+/wrk_output.tmp
+cpu_usage_*.log
+mem_usage_*.log

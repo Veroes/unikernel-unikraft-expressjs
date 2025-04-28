@@ -1,0 +1,9 @@
+spec: v0.6
+
+name: unikernel-web-app
+
+runtime: node/base:latest
+
+rootfs: ./Dockerfile
+
+cmd: ['/usr/bin/node', '/usr/src/app.js']

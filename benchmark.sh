@@ -52,9 +52,6 @@ while ps -p $KRAFT_PID > /dev/null; do
 done & # Running in Background
 MEM_MONITOR_PID=$!
 
-# Delay
-sleep 0.5
-
 # Run WRK benchmark
 wrk -t$THREADS -c$CONNECTIONS -d"${DURATION}s" $APP_URL | tee $TMP_WRK_OUTPUT >> $LOG_FILE 
 
